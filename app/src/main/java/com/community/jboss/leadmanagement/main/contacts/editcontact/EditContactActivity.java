@@ -16,7 +16,6 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.provider.MediaStore;
 import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -40,12 +39,11 @@ import java.io.IOException;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-
-
-import static com.community.jboss.leadmanagement.SettingsActivity.PREF_DARK_THEME;
 import shortbread.Shortcut;
-@Shortcut(id = "add_new_contact",icon= R.drawable.ic_person_grey, shortLabel = "Add new contact")
 
+import static com.community.jboss.leadmanagement.SettingsFragment.PREF_DARK_THEME;
+
+@Shortcut(id = "add_new_contact",icon= R.drawable.ic_person_grey, shortLabel = "Add new contact")
 public class EditContactActivity extends AppCompatActivity {
     public static final String INTENT_EXTRA_CONTACT_NUM = "INTENT_EXTRA_CONTACT_NUM";
 
