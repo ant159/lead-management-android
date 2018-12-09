@@ -37,7 +37,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 import static com.community.jboss.leadmanagement.SettingsActivity.PREF_DARK_THEME;
-
+import shortbread.Shortcut;
+@Shortcut(id = "add_new_contact",icon= R.drawable.ic_person_grey, shortLabel = "Add new contact")
 public class EditContactActivity extends AppCompatActivity {
     public static final String INTENT_EXTRA_CONTACT_NUM = "INTENT_EXTRA_CONTACT_NUM";
 
